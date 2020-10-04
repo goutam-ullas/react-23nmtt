@@ -1556,8 +1556,7 @@ class Application extends React.Component {
           >
             {/*Research Window - PDF 1*/}
             <PDFViewer
-              url="./Hot Water March 2020.pdf"
-              controls = {false}
+              url="../Assets/Hot Water March 2020.pdf"
               style={{ marginLeft: 50, marginTop: window.innerHeight / 10 }}
               height={(4 * window.innerHeight) / 5}
               width="auto"
