@@ -379,7 +379,7 @@ display:inline;
   background-color: #ffffff;
   color: black;
   align-self: "flex-start";
-  font-family: NimbusRome;
+  font-family: Junicode;
   font-size: 14px;
 }
 
@@ -396,9 +396,9 @@ display:inline;
 }
 
 @font-face {
-    font-family: NimbusRome;
+    font-family: Junicode;
     font-weight: regular;
-    src: url("./Assets/NimbusRomNo9L-Reg.otf") format("opentype");
+    src: url("./Assets/Junicode.ttf") format("truetype");
 }
 
 *:focus {
