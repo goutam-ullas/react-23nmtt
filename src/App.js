@@ -1525,7 +1525,7 @@ class Application extends React.Component {
               width: 50,
               height: window.innerHeight,
               position: "absolute",
-              backgroundColor: "black",
+              backgroundColor: "#fd3217",
               zIndex: 101
             }}
           />
