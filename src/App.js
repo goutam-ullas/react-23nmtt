@@ -4,16 +4,14 @@ import {
   SliderInput,
   SliderTrack,
   SliderTrackHighlight,
-  SliderHandle,
+  SliderHandle
 } from "@reach/slider";
 import "@reach/slider/styles.css";
 import ReactPlayer from "react-player";
+import { PDFViewer } from "react-view-pdf";
 import Typekit from "react-typekit";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faVolumeOff,
-  faVolumeUp
-} from "@fortawesome/free-solid-svg-icons";
+import { faVolumeOff, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
 import mapboxgl from "mapbox-gl";
 mapboxgl.accessToken =
@@ -807,7 +805,7 @@ class Application extends React.Component {
             position: "fixed",
             width: 0.3 * this.state.mapWidth,
             left: 18,
-            top: 0.1*this.state.mapHeight,
+            top: 0.1 * this.state.mapHeight,
             visibility: this.state.page1Vis,
             zIndex: 1
           }}
@@ -1556,20 +1554,29 @@ class Application extends React.Component {
               zIndex: 100
             }}
           >
+            {/*Research Window - PDF 1*/}
+            <PDFViewer
+              url="http://www.africau.edu/images/default/sample.pdf"
+              style={{ marginLeft: 50, marginTop: window.innerHeight / 10 }}
+              height={(4 * window.innerHeight) / 5}
+              width="auto"
+            />
             {/*Research Window - Image 1*/}
+            {/*
             <img
               style={{ marginLeft: 50, marginTop: window.innerHeight / 10 }}
               src="https://i.imgur.com/oEgq3R8.jpg"
               height={(4 * window.innerHeight) / 5}
               width="auto"
-            />
+            />*/}
             {/*Research Window - Image 2*/}
+            {/*}
             <img
               style={{ marginLeft: 50, marginTop: window.innerHeight / 10 }}
               src="https://i.imgur.com/Fn7Komh.jpg"
               height={(4 * window.innerHeight) / 5}
               width="auto"
-            />
+            />*/}
           </div>
         </div>
         {/*Map Dots PopUps*/}
