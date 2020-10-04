@@ -378,8 +378,8 @@ display:inline;
 }
 
 .themeDesc{
-  background-color: #fd3217;
-  color: white;
+  background-color: whitesmoke;
+  color: black;
   align-self: "flex-start";
   font-family: 'Junicode';
   font-size: 18px;
