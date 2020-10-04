@@ -8,7 +8,7 @@ import {
 } from "@reach/slider";
 import "@reach/slider/styles.css";
 import ReactPlayer from "react-player";
-import { Document, Page } from "react-pdf";
+import { Document, Page } from 'react-pdf/dist/umd/entry.webpack';
 import Typekit from "react-typekit";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeOff, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
@@ -1555,6 +1555,9 @@ class Application extends React.Component {
             }}
           >
             {/*Research Window - PDF 1*/}
+            <Document file={"/Goutam Health Insurance.pdf"}>
+              <Page pageNumber={1} />
+            </Document>
             {/*Research Window - Image 1*/}
             {/*
             <img
