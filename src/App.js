@@ -1557,6 +1557,7 @@ class Application extends React.Component {
             {/*Research Window - PDF 1*/}
             <PDFViewer
               url="http://www.africau.edu/images/default/sample.pdf"
+              controls = {false}
               style={{ marginLeft: 50, marginTop: window.innerHeight / 10 }}
               height={(4 * window.innerHeight) / 5}
               width="auto"
