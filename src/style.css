@@ -331,7 +331,7 @@ position: fixed;
 display:  flex;
 right: 0;
 top: 0;
-background-color: black;
+background-color: #fd3217;
 overflow:scroll;
 transition: width 1s;
 }
@@ -342,7 +342,7 @@ position: fixed;
 display:  flex;
 left: 0;
 bottom: 0;
-background-color: black;
+background-color: #fd3217;
 overflow:scroll;
 transition: height 0.5s;
 }
@@ -353,7 +353,7 @@ position: fixed;
 display:  flex;
 right: 0;
 top: 0;
-background-color: black;
+background-color: #fd3217;
 overflow:scroll;
 transition: width 1s, border 1s;
 scroll-padding-left: 50;
