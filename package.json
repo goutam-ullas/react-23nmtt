@@ -9,7 +9,7 @@
     "@phuocng/react-pdf-viewer": "1.7.0",
     "@reach/slider": "0.11.2",
     "mapbox-gl": "1.12.0",
-    "pdfjs-dist": "^2.6.347",
+    "pdfjs-dist": "2.6.347",
     "precise-ui": "1.4.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -17,7 +17,10 @@
     "react-player": "2.6.2",
     "react-typekit": "1.1.4",
     "react-view-pdf": "0.0.15",
-    "styled-components": "4.4.1"
+    "simple-react-pdf": "1.0.9",
+    "styled-components": "4.4.1",
+    "url": "^0.11.0",
+    "zlib": "^1.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
