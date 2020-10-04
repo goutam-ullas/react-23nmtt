@@ -806,7 +806,7 @@ class Application extends React.Component {
             padding: 50,
             position: "fixed",
             width: 0.3 * this.state.mapWidth,
-            top: 0.3 * this.state.mapHeight,
+            top: 0.3 * this.window.innerHeight,
             left: 25,
             visibility: this.state.page1Vis,
             zIndex: 1
