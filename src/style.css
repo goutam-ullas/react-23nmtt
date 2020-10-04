@@ -326,6 +326,8 @@ button[aria-label][data-balloon-pos] {
 }
 
 .about {
+font-family: 'junicode';
+font-size: 18;
 color: white;
 position: fixed;
 display:  flex;
@@ -379,7 +381,7 @@ display:inline;
   background-color: #ffffff;
   color: black;
   align-self: "flex-start";
-  font-family: Junicode;
+  font-family: 'Junicode';
   font-size: 18px;
 }
 
@@ -396,9 +398,9 @@ display:inline;
 }
 
 @font-face {
-    font-family: Junicode;
+    font-family: 'Junicode';
     font-weight: regular;
-    src: url("./Assets/Junicode.ttf") format("truetype");
+    src: url("./Assets/Junicode.ttf") format('truetype');
 }
 
 *:focus {
