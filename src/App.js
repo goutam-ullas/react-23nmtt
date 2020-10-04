@@ -8,7 +8,7 @@ import {
 } from "@reach/slider";
 import "@reach/slider/styles.css";
 import ReactPlayer from "react-player";
-import { PDFViewer } from "react-view-pdf";
+import { Document, Page } from "react-pdf";
 import Typekit from "react-typekit";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeOff, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
@@ -1555,12 +1555,6 @@ class Application extends React.Component {
             }}
           >
             {/*Research Window - PDF 1*/}
-            <PDFViewer
-              url="../Assets/Hot Water March 2020.pdf"
-              style={{ marginLeft: 50, marginTop: window.innerHeight / 10 }}
-              height={(4 * window.innerHeight) / 5}
-              width="auto"
-            />
             {/*Research Window - Image 1*/}
             {/*
             <img
