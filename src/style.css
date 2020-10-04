@@ -326,8 +326,8 @@ button[aria-label][data-balloon-pos] {
 }
 
 .about {
-font-family: 'junicode';
-font-size: 18;
+font-family: 'Junicode';
+font-size: 18px;
 color: white;
 position: fixed;
 display:  flex;
