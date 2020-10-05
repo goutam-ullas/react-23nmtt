@@ -6,6 +6,8 @@ import {
   SliderTrackHighlight,
   SliderHandle
 } from "@reach/slider";
+import AllPagesPDFViewer from "./all-pages";
+import samplePDF from "./sample.pdf";
 import "@reach/slider/styles.css";
 import ReactPlayer from "react-player";
 import Typekit from "react-typekit";
@@ -1554,6 +1556,9 @@ class Application extends React.Component {
             }}
           >
             {/*Research Window - PDF 1*/}
+            <div>
+              <AllPagesPDFViewer pdf={samplePDF} />
+            </div>
             {/*Research Window - Image 1*/}
             {/*
             <img
