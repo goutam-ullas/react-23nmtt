@@ -826,7 +826,7 @@ class Application extends React.Component {
             zIndex: 10
           }}
         >
-          <FontAwesomeIcon icon={this.state.volumeIcon} />
+          <FontAwesomeIcon icon={this.state.volumeIcon} color={"#fd3217"}/>
         </span>
         {/*Map Div*/}
         <div
