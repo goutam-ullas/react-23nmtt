@@ -397,13 +397,6 @@ display:inline;
   cursor: crosshair !important;
 }
 
-/* For all pages */
-.all-page-container {
-  height: 100%;
-  max-height: 500px;
-  overflow: auto;
-}
-
 @font-face {
     font-family: 'Junicode';
     font-weight: regular;
