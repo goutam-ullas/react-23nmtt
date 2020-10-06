@@ -7,14 +7,13 @@ import {
   SliderHandle
 } from "@reach/slider";
 import "@reach/slider/styles.css";
-import AllPagesPDFViewer from "./all-pages";
 import ReactPlayer from "react-player";
 import Typekit from "react-typekit";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeOff, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
 import mapboxgl from "mapbox-gl";
-import samplePDF from "./sample.pdf";
+import { sampleBase64pdf } from "./sampleBase64pdf";
 mapboxgl.accessToken =
   "pk.eyJ1Ijoibm5pa2l0YSIsImEiOiJjazdtYzV2MDYwMzliM2dubnVubnJuMTRrIn0.6KqRhtWgMc_nGwMPAqmstQ";
 
@@ -1557,9 +1556,6 @@ class Application extends React.Component {
             }}
           >
             {/*Research Window - PDF 1*/}
-            <div className="all-page-container">
-              <AllPagesPDFViewer pdf={samplePDF} />
-            </div>
             {/*Research Window - Image 1*/}
             {/*
             <img
