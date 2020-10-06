@@ -293,7 +293,7 @@ button[aria-label][data-balloon-pos] {
   font-style: normal;
   font-weight: 100;
   position: fixed;
-  color: black;
+  color: #fd3217;
 }
 
 .mapScaleMain{
@@ -301,7 +301,7 @@ button[aria-label][data-balloon-pos] {
     position: fixed;
     height: 1.22px;
     width: 120px;
-    background-color: #000000;
+    background-color: #fd3217;
     top:30px;
     right:25px;
 }
@@ -311,14 +311,14 @@ button[aria-label][data-balloon-pos] {
     position: fixed;
     height: 10px;
     width: 1.22px;
-    background-color: #000000;
+    background-color: #fd3217;
     top:25px;
 }
 
 .mapScaleNumber{
     display: block;
     position: fixed;
-    color: #000000;
+    color: #fd3217;
     top:30px;
     font-family: ballinger-mono;
     font-size: 12;
@@ -379,7 +379,7 @@ display:inline;
 
 .themeDesc{
   background-color: white;
-  color: black;
+  color: #fd3217;
   align-self: "flex-start";
   font-family: 'Junicode';
   font-size: 18px;
