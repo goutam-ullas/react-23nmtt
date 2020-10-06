@@ -167,7 +167,7 @@ class Application extends React.Component {
       container: this.mapContainer,
       style: "mapbox://styles/nnikita/ckd7n4m5b04e31ip8ai5a1xfj",
       center: [this.state.lng, this.state.lat],
-      zoom: 19.5,
+      zoom: 20,
       pitch: 60,
       attributionControl: false,
       interactive: false
@@ -733,19 +733,19 @@ class Application extends React.Component {
   /*When Slider position is changed*/
   sliderChange(v) {
     this.setState({ value: v });
-    var zoomLevel = (1 / 33) * (v - 1) + 18;
-    if (zoomLevel < 19) {
+    var zoomLevel = (1 / 33) * (v - 1) + 19;
+    if (zoomLevel < 20) {
       this.setState({
-        scaleDistance: Math.round(33.72 - 16.92 * (zoomLevel - 18))
+        scaleDistance: Math.round(16.8 - 8.4 * (zoomLevel - 19))
       });
     } else {
-      if (zoomLevel < 20) {
+      if (zoomLevel < 21) {
         this.setState({
-          scaleDistance: Math.round(16.8 - 8.4 * (zoomLevel - 19))
+          scaleDistance: Math.round(8.4 - 4.2 * (zoomLevel - 20))
         });
       } else {
         this.setState({
-          scaleDistance: Math.round(8.4 - 4.2 * (zoomLevel - 20))
+          scaleDistance: Math.round(4.2 - 2.16 * (zoomLevel - 21))
         });
       }
     }
