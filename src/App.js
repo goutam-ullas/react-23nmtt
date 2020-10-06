@@ -157,6 +157,7 @@ class Application extends React.Component {
   circleState = 0;
   maxThemes = 4;
   triangleState = false;
+
   /*On Mount*/
   componentDidMount() {
     /*Update Dimenstions based on screen size*/
@@ -1556,6 +1557,7 @@ class Application extends React.Component {
             }}
           >
             {/*Research Window - PDF 1*/}
+
             {/*Research Window - Image 1*/}
             {/*
             <img
