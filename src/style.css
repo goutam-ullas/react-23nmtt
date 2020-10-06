@@ -381,7 +381,7 @@ display:inline;
   background-color: white;
   color: #fd3217;
   align-self: "flex-start";
-  font-family: 'Junicode';
+  font-family: "Junicode";
   font-size: 18px;
 }
 
@@ -395,6 +395,13 @@ display:inline;
 
 .mapbox-canvas-container { 
   cursor: crosshair !important;
+}
+
+/* For all pages */
+.all-page-container {
+  height: 100%;
+  max-height: 500px;
+  overflow: auto;
 }
 
 @font-face {
