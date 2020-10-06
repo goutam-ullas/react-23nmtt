@@ -1,6 +1,6 @@
 :root {
   --balloon-border-radius: 0px;
-  --balloon-color: black;
+  --balloon-color: #fd3217;
   --balloon-text-color: #fff;
   --balloon-font-size: 12px;
   --balloon-move: 12px;
@@ -12,18 +12,18 @@
 }
 
 [data-reach-slider-track] {
-  background: black;
+  background: #fd3217;
 }
 
 [data-reach-slider-track-highlight] {
-  background: black;
+  background: #fd3217;
 }
 
 [data-reach-slider-handle] {
   width: 16px;
   height: 16px;
-  border: 2px solid black;
-  background: black;
+  border: 2px solid #fd3217;
+  background: #fd3217;
   border-radius: 16px;
   z-index: 1;
   transform-origin: center;
@@ -32,8 +32,8 @@
 [data-reach-slider-handle]:focus {
   width: 16px;
   height: 16px;
-  border: 2px solid black;
-  background: black;
+  border: 2px solid #fd3217;
+  background: #fd3217;
   border-radius: 16px;
   z-index: 1;
   transform-origin: center;
