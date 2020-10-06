@@ -24,7 +24,7 @@ class Application extends React.Component {
     this.state = {
       mapHeight: window.innerHeight,
       mapWidth: window.innerWidth,
-      lng: 78.47400,
+      lng: 78.47350,
       lat: 17.37500,
       value: 50,
       index: true,
@@ -169,6 +169,7 @@ class Application extends React.Component {
       center: [this.state.lng, this.state.lat],
       zoom: 20,
       pitch: 60,
+      bearing: 110,
       attributionControl: false,
       interactive: false
     });
