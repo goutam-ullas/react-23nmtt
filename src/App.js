@@ -7,9 +7,6 @@ import {
   SliderHandle
 } from "@reach/slider";
 import "@reach/slider/styles.css";
-import { Worker } from "@phuocng/react-pdf-viewer";
-import { Viewer, RenderToolbar, Slot } from "@phuocng/react-pdf-viewer";
-import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
 import ReactPlayer from "react-player";
 import Typekit from "react-typekit";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -1557,9 +1554,6 @@ class Application extends React.Component {
             }}
           >
             {/*Research Window - PDF 1*/}
-            <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.4.456/build/pdf.worker.min.js">
-              <Viewer fileUrl="https://pdfhost.io/v/HfmvyV5re_pdfpdf.pdf" />
-            </Worker>
             {/*Research Window - Image 1*/}
             {/*
             <img
