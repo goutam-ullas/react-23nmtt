@@ -1555,13 +1555,13 @@ class Application extends React.Component {
               leftBorder: this.state.researchBorder,
               top: 10,
               bottom:10,
-              height: 3*this.state.mapHeight/4,
               fontSize: 28,
               zIndex: 100
             }}
           >
             {/*Research Window - PDF 1*/}
             <SinglePagePDFViewer
+            style={{height: this.state.mapHeight/3}}
               pdf={sampleBase64pdf}
             />
 
