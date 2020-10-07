@@ -13,6 +13,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeOff, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
 import mapboxgl from "mapbox-gl";
+import SinglePagePDFViewer from "./single-page";
+import AllPagesPDFViewer from "./all-pages";
 import { sampleBase64pdf } from "./sampleBase64pdf";
 mapboxgl.accessToken =
   "pk.eyJ1Ijoibm5pa2l0YSIsImEiOiJjazdtYzV2MDYwMzliM2dubnVubnJuMTRrIn0.6KqRhtWgMc_nGwMPAqmstQ";
@@ -794,7 +796,7 @@ class Application extends React.Component {
           url={this.theme0Video}
           height={1.2 * this.state.mapHeight}
           width={1.2 * this.state.mapWidth}
-          fluid={true}
+          fluid="true"
           playing={this.state.page1Play}
           controls={false}
           volume={0.05}
@@ -1551,12 +1553,19 @@ class Application extends React.Component {
             style={{
               width: this.state.researchWidth,
               leftBorder: this.state.researchBorder,
-              height: window.innerHeight,
+              top: 10,
+              bottom:10,
               fontSize: 28,
               zIndex: 100
             }}
           >
             {/*Research Window - PDF 1*/}
+            <SinglePagePDFViewer
+              style={{
+                height: this.state.mapHeight-500
+              }}
+              pdf={sampleBase64pdf}
+            />
 
             {/*Research Window - Image 1*/}
             {/*
