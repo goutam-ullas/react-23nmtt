@@ -25,15 +25,12 @@ export default function SinglePage(props) {
     changePage(1);
   }
 
-  const { pdf, style } = props;
+  const { pdf, height } = props;
 
   return (
     <>
-      <Document style={style} file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-        <Page pageNumber={pageNumber} />
-      </Document>
       <div>
-        <p style={{ fontSize: 16, right: 0 }}>
+        <p style={{ position: "absolute", fontSize: 16, bottom: 0, left: 10}}>
           {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
         </p>
         <button
@@ -50,6 +47,11 @@ export default function SinglePage(props) {
         >
           <span>&#62;</span>
         </button>
+      </div>
+      <div>
+        <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
+          <Page pageNumber={pageNumber} height={height} />
+        </Document>
       </div>
     </>
   );

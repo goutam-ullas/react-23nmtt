@@ -8,6 +8,9 @@ import {
 } from "@reach/slider";
 import "@reach/slider/styles.css";
 import ReactPlayer from "react-player";
+import { Document, Page } from "react-pdf";
+import { pdfjs } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/build/pdf.worker.js`;
 import Typekit from "react-typekit";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeOff, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
@@ -85,7 +88,9 @@ class Application extends React.Component {
       volumeIcon: faVolumeOff,
       page1mute: true,
       theme3DescTop: window.innerHeight / 4,
-      theme3VidTop: window.innerHeight / 4
+      theme3VidTop: window.innerHeight / 4,
+      numPages: null,
+      pageNumber: 1
     };
     /*Bind Functions*/
     this.researchRef = React.createRef();
@@ -776,6 +781,23 @@ class Application extends React.Component {
         researchWidth: window.innerWidth / 2
       });
     }
+  }
+
+  onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+    setPageNumber(1);
+  }
+
+  changePage(offset) {
+    setPageNumber(prevPageNumber => prevPageNumber + offset);
+  }
+
+  previousPage() {
+    changePage(-1);
+  }
+
+  nextPage() {
+    changePage(1);
   }
 
   render() {
@@ -1527,7 +1549,7 @@ class Application extends React.Component {
               width: 50,
               height: window.innerHeight,
               position: "absolute",
-              backgroundColor: "#fd3217",
+              backgroundColor: "transparent",
               zIndex: 101
             }}
           />
@@ -1554,14 +1576,14 @@ class Application extends React.Component {
               width: this.state.researchWidth,
               leftBorder: this.state.researchBorder,
               top: 10,
-              bottom:10,
+              bottom: 10,
               fontSize: 28,
               zIndex: 100
             }}
           >
             {/*Research Window - PDF 1*/}
             <SinglePagePDFViewer
-            style={{height: this.state.mapHeight/3}}
+              height={this.state.mapHeight - 20}
               pdf={sampleBase64pdf}
             />
 
