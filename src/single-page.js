@@ -29,19 +29,21 @@ export default function SinglePage(props) {
 
   return (
     <>
-      <div>
-        <p style={{ position: "absolute", fontSize: 16, bottom: 0, left: 10}}>
+      <div style={{ width: "100%" }}>
+        <p style={{ position: "absolute", fontSize: 16, bottom: 0, left: 10 }}>
           {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
         </p>
+      </div>
+      <div>
         <button
-          class="button"
+          className="button"
           disabled={pageNumber <= 1}
           onClick={previousPage}
         >
           <span>&#60;</span>
         </button>
         <button
-          class="button"
+          className="button"
           disabled={pageNumber >= numPages}
           onClick={nextPage}
         >

@@ -1579,11 +1579,11 @@ class Application extends React.Component {
               zIndex: 100
             }}
           >
-            {/*Research Window - PDF 1
+            {/*Research Window - PDF 1*/}
             <SinglePagePDFViewer
               height={this.state.mapHeight - 20}
               pdf={sampleBase64pdf}
-            />*/}
+            />
 
             {/*Research Window - Image 1*/}
             {/*
