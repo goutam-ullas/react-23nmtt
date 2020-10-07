@@ -9,7 +9,6 @@ import {
 import "@reach/slider/styles.css";
 import ReactPlayer from "react-player";
 import { pdfjs } from "react-pdf";
-/*pdfjs.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/build/pdf.worker.js`;*/
 import Typekit from "react-typekit";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVolumeOff, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
@@ -1580,11 +1579,11 @@ class Application extends React.Component {
               zIndex: 100
             }}
           >
-            {/*Research Window - PDF 1
+            {/*Research Window - PDF 1*/}
             <SinglePagePDFViewer
               height={this.state.mapHeight - 20}
               pdf={sampleBase64pdf}
-            />*/}
+            />
 
             {/*Research Window - Image 1*/}
             {/*
